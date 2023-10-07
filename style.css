@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali&family=Ysabeau+Infant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali&family=Tenali+Ramakrishna&family=Ysabeau+Infant:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Bedroom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin-left: 83px;
+    margin-right: 83px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 10vw;
+    border: 3px solid aqua;
+    padding: 3px 3px 3px 3px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0px 20px;
+    display: inline;
+    position: relative;
+    font-family: 'Borel', cursive;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+} 
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    font-weight: bolder;
+    color: #fff;
+}
+
+.switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.switch button{
+    width: 150px;
+    height: 75px;
+    border: 3px solid #009688;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Mali', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;}
+
+.switch button:hover{
+    font-weight: bolder;
+    border: 6px solid #009688;
+}
+
+.banner .content{
+    color: #fff;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Borel', cursive;
+}
+
+.reference footer{
+    color: #fff;
+    margin-left: 85%;
+    padding-top: 200px;
+    font-family: 'Mali', cursive;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
